@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden; /* Esconde a barra de rolagem */
+}
+
+body {
+    padding: 20px 40px;
+    background-color: #141414;
+}
+
+.inicial {
+    height: calc(100vh - 40px); /* Subtraímos a altura do padding */
+    width: calc(100vw - 80px);  /* Subtraímos a largura do padding */
+}
+
+.header {
+    height: 3vh;
+    width: 100%; /* Define 100% da largura interna disponível */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.header .logo {
+    max-width: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .logo .logo_especial {
+    color: #441db3;
+    font-size: 26px;
+}
+
+.header nav {
+    max-width: 50%;
+    display: flex;
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header nav ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 50px 0px 0px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.inicial .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inicial .container .box {
+    height: calc(97vh - 40px); /* Ajuste do padding */
+    width: 50%; /* Define largura completa do box dentro da inicial */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicial .box h1 {
+    color: white;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.inicial .box h2 {
+    color: #441db3;
+    font-size: 15px;
+
+}
+
+.inicial .box h3 {
+    color: dimgrey;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.inicial .box a {
+    color: #441db3;
+    text-decoration: none;
+    border: 2px solid #441db3;
+    padding: 5px 10px; /* Ajuste leve de padding para que fique próximo ao texto */
+    display: inline-block; /* Garante que a borda fique ao redor do conteúdo */
+    font-weight: bold; /* Opcional: para destacar o texto */
+    margin-top: 20px; /* Ajuste para espaçamento acima, caso necessário */
+    cursor: pointer; /* Seta de cursor para indicar interatividade */
+    width: 25%;
+}
+
+.inicial img {
+    width: 100%; /* Ajuste para se adaptar ao contêiner pai */
+    max-width: 400px; /* Limite a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    object-fit: cover; /* Ajuste para cobrir o contêiner sem distorção */
+}
+
